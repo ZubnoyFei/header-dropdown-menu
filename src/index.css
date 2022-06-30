@@ -1,3 +1,33 @@
 header {
     background-color: #5C6F4E;
+    height: 100px;
+    width: 1440px;
+display: flex;
+justify-content: space-between;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    color: #FFFFFF;
+border: 1px solid rebeccapurple;
+    background-color: rebeccapurple;
+}
+
+.sub-menu
+{
+    display: none;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover
+{
+    display: block;
 }
