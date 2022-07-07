@@ -35,7 +35,7 @@ ul {
     color: #FFFFFF;
     border: 1px solid rebeccapurple;
     background-color: rebeccapurple;
-
+border-radius: 50px;
 }
 
 .sub-menu li > ul
@@ -44,7 +44,10 @@ ul {
 }
 
 .sub-menu ul li {
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
     position: relative;
     transition: 0.5s;
     display: block;
