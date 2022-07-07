@@ -2,32 +2,62 @@ header {
     background-color: #5C6F4E;
     height: 100px;
     width: 1440px;
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
 }
 
+
+
+.image-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.image-wrapper img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
 
 h2 {
     font-size: 24px;
     color: #FFFFFF;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+
 }
 
 ul {
     color: #FFFFFF;
-border: 1px solid rebeccapurple;
+    border: 1px solid rebeccapurple;
     background-color: rebeccapurple;
+
 }
 
-.sub-menu
+.sub-menu li > ul
 {
     display: none;
 }
-.main-item:focus ~ .sub-menu,
-.main-item:active ~ .sub-menu,
-.sub-menu:hover
+
+.sub-menu ul li {
+    padding: 4px;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+}
+
+.sub-menu li:hover ul
 {
     display: block;
+    position: absolute;
+}
+
+.chevron {
+    transform: rotate(270deg);
+    width: 20px;
+    height: 20px;
 }
