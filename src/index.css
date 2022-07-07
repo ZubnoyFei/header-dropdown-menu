@@ -44,7 +44,7 @@ ul {
 }
 
 .sub-menu ul li {
-    padding: 4px;
+    padding: 20px;
     position: relative;
     transition: 0.5s;
     display: block;
